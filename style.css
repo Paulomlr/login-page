@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f5f6fa;
+}
+
+.container header {
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+
+.form {
+    width: 50%;
+    padding: 10px 130px 10px 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h1 {
+    color: #1E293B;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.form .subtitle {
+    color: #475569;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.label-email label,
+.label-password label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.label-email input {
+    margin-top: 10px;
+}
+
+.form input {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 13px;
+}
+
+.error-msg {
+    color: red;
+    font-size: 14px;
+    visibility: hidden;
+}
+
+.form input:focus {
+    border: 1px solid #9747FF;
+    outline: none;
+}
+
+.form input:invalid:not(:focus):not(:placeholder-shown) {
+    border: 1px solid red;
+}
+.form input:invalid:not(:focus):not(:placeholder-shown) ~ .error-msg {
+    visibility: visible;
+}
+
+.label-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.forgot {
+    font-size: 13px;
+    color: #7C3AED;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper button {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.password-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-primary {
+    width: 100%;
+    background: #7C3AED;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .25s;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.btn-primary:hover {
+    background: #9F67FF;
+}
+
+.signup {
+    font-size: 14px;
+}
+
+.signup a {
+    color: #9400ff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signup {
+    color: #475569;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+.art {
+    flex: 1;
+    width: 50%;
+    background: url('assets/bg.jpg') center/cover no-repeat;
+}

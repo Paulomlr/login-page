@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <main class="container">
+        <section class="panel form">
+            <header>
+                <img src="assets/logo.svg" alt="Vertigo logo" class="logo">
+            </header>
+
+            <h1>Acesse a plataforma</h1>
+            <p class="subtitle">
+                Faça login ou registre-se para começar a construir <br> projetos ainda hoje.
+            </p>
+
+            <form>
+                <div class="label-email">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                    <span class="error-msg">Digite um e-mail válido</span>
+                </div>
+
+                <div class="label-password">
+                    <label for="password">Senha</label> 
+                    <a href="#" class="forgot">Esqueceu a senha?</a>
+                </div>
+
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                    <button type="button" id="togglePwd" aria-label="Monstrar senha">
+                        <img src="assets/eye.svg" alt="" id="iconPwd">
+                    </button>
+                </div>
+
+                <button type="submit" class="btn-primary">Entrar</button>
+            </form>
+
+            <p class="signup">
+                Ainda não tem uma conta?
+                <a href="#">Inscreva-se</a>
+            </p>
+        </section>
+        <section class="panel art">
+        </section>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>
